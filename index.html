@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/owfont-regular.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap"
+      rel="stylesheet"
+    />
+    <title>Momentum</title>
+  </head>
+  <body>
+    <div class="background">
+      <button id="previous">
+        <img class="previous" src="images/previous.png" alt="previous" />
+      </button>
+      <main class="main">
+        <div class="time-wrapper"><time id="time"></time></div>
+        <h1 id="fullDate"></h1>
+
+        <h1>
+          <span id="greeting"></span>
+          <span id="name" contenteditable="true"></span>
+        </h1>
+
+        <h2 id="question-abt-focus">What Is Your Focus For Today?</h2>
+        <h2 id="focus" contenteditable="true"></h2>
+      </main>
+      <div class="secondary">
+        <h2 class="forecast">FORECAST</h2>
+        <div class="weather">
+          <i class="weather-icon owf" id="weather-icon"></i>
+          <div class="icon-wrapper">
+            <h2 id="city" contenteditable="true"></h2>
+            <div class="forecast-info" id="temperature"></div>
+            <div class="forecast-info" id="weather-description"></div>
+            <div class="forecast-info" id="humidity"></div>
+            <div class="forecast-info" id="wind-speed"></div>
+          </div>
+        </div>
+        <div class="quote">
+          <blockquote id="blockquote">
+          </blockquote>
+          <div class="quote-author">
+            <figcaption id="figcaption"></figcaption>
+            <button id="refresh">
+              <img src="images/refresh.svg" alt="refresh" class="refresh" />
+            </button>
+          </div>
+        </div>
+      </div>
+      <button id="next">
+        <img class="next" src="images/next.png" alt="next" />
+      </button>
+    </div>
+
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>
